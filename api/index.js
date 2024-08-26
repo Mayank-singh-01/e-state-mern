@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 //config ENV 
 dotenv.config();
 
+
 //connect to mongodb database
 mongoose.connect(process.env.MONGO_DB).then(()=>{
    console.log("connected to the database");
@@ -14,6 +15,6 @@ mongoose.connect(process.env.MONGO_DB).then(()=>{
 
 const app = express();
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
    console.log('server is runing at port no 3000');
 });
