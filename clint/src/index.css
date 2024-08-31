@@ -5,3 +5,53 @@
 body{
    background-color: rgb(241, 245, 241);
 }
+
+@layer components {
+   .text-mixup {
+      @apply transition-colors duration-1000;
+      animation: color-change 5s infinite;
+   }
+
+ @keyframes color-change {
+    0% {
+       color: #f87171;
+       /* Red */
+    }
+
+    14.28% {
+       color: #34d399;
+       /* Blue */
+      }
+      
+      28.56% {
+       color: #60a5fa;
+       /* Green */
+    }
+
+    42.84% {
+       color: #fbbf24;
+       /* Yellow */
+    }
+
+    57.12% {
+       color: #a78bfa;
+       /* Purple */
+    }
+
+    71.40% {
+       color: #f472b6;
+       /* Pink */
+    }
+
+    85.68% {
+       color: #10b981;
+       /* Teal */
+    }
+
+    100% {
+       color: #d73e06;
+       /* Red */
+    }
+ }
+ }
+ 
