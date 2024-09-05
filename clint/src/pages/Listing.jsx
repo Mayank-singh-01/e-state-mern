@@ -43,16 +43,16 @@ export default function Listing() {
       };
       fetchListing();
     }, [params.listingId]);
-
+      
   return (
     <main className=" min-h-screen">
       {loading && (
-        <p className="text-center font-semibold my-7 text-mixup text-3xl">
+        <p className="text-center font-semibold my-10 text-mixup text-3xl">
           Loading....
         </p>
       )}
       {error && (
-        <p className="text-center font-semibold my-7 text-mixup text-3xl">
+        <p className="text-center font-semibold my-10 text-mixup text-3xl">
           Something went wrong !
         </p>
       )}
