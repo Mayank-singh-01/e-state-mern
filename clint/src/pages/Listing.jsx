@@ -98,7 +98,7 @@ export default function Listing() {
               {listing.type === "rent" && " / month"}
             </p>
             <p className="flex items-center mt-6 gap-2 text-slate-600  text-sm">
-              <FaMapMarkerAlt className="text-green-700" />
+              <FaMapMarkerAlt className="text-green-700 text-xl" />
               {listing.address}
             </p>
             <div className="flex gap-4">
@@ -117,23 +117,23 @@ export default function Listing() {
             </p>
             <ul className="text-green-900 font-semibold text-md flex flex-col gap-4 font-serif">
               <li className="flex items-center gap-1 whitespace-nowrap ">
-                <FaBed className="text-lg" />
+                <FaBed className="text-xl" />
                 {listing.bedrooms > 1
                   ? `${listing.bedrooms} beds `
                   : `${listing.bedrooms} bed `}
               </li>
               <li className="flex items-center gap-1 whitespace-nowrap ">
-                <FaBath className="text-lg" />
+                <FaBath className="text-xl" />
                 {listing.bathrooms > 1
                   ? `${listing.bathrooms} baths `
                   : `${listing.bathrooms} bath `}
               </li>
               <li className="flex items-center gap-1 whitespace-nowrap ">
-                <FaParking className="text-lg" />
+                <FaParking className="text-xl" />
                 {listing.parking ? "Parking spot" : "No Parking"}
               </li>
               <li className="flex items-center gap-1 whitespace-nowrap ">
-                <FaChair className="text-lg" />
+                <FaChair className="text-xl" />
                 {listing.furnished ? "Furnished" : "Unfurnished"}
               </li>
             </ul>

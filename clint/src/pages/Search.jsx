@@ -28,7 +28,7 @@ export default function Search() {
       const orderFromUrl = urlParams.get("order");
 
       if(searchTermFromUrl || typeFromUrl || parkingFromUrl || furnishedFromUrl || offerFromUrl || sortFromUrl || orderFromUrl){
-          setSidebardata({
+          setSidebarData({
             searchTerm: searchTermFromUrl || "",
             type: typeFromUrl || "all",
             parking: parkingFromUrl === "true" ? true : false,
@@ -43,7 +43,7 @@ export default function Search() {
         try {
           setLoading(true);
           const searchQuery = urlParams.toString();
-          const res = await fetch("/api/listing/getAll");
+          const res = await fetch(`/api/listing/get?${searchQuery}`);
           const data = await res.json();
           setListings(data);
           setLoading(false);
