@@ -47,7 +47,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="min-h-screen">
       <Swiper navigation>
         { offerListings &&
           offerListings.length > 0 &&
@@ -116,7 +116,7 @@ export default function Home() {
                 Recent places for rent
               </h2>
             </div>
-            <div className="flex flex-wrap justify-evenly gap-4">
+            <div className="flex flex-wrap justify-evenly sm:gap-10 gap-4">
               {rentListings.map((listing) => (
                 <ListingItem listing={listing} key={listing._id} />
               ))}
@@ -137,7 +137,7 @@ export default function Home() {
                 Recent places for sale
               </h2>
             </div>
-            <div className="flex justify-evenly flex-wrap gap-4">
+            <div className="flex justify-evenly flex-wrap sm:gap-10 gap-4">
               {saleListings.map((listing) => (
                 <ListingItem listing={listing} key={listing._id} />
               ))}
