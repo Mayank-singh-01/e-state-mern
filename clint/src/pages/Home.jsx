@@ -25,7 +25,7 @@ export default function Home() {
     };
     const fetchRentListings = async () => {
       try {
-        const res = await fetch("/api/listing/get?type=rent&limit=3");
+        const res = await fetch("/api/listing/get?type=rent&limit=6");
         const data = await res.json();
         setRentListings(data);
         fetchSaleListings();
@@ -36,7 +36,7 @@ export default function Home() {
 
     const fetchSaleListings = async () => {
       try {
-        const res = await fetch("/api/listing/get?type=sale&limit=3");
+        const res = await fetch("/api/listing/get?type=sale&limit=6");
         const data = await res.json();
         setSaleListings(data);
       } catch (error) {
@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <div>
       <Swiper navigation>
-        {offerListings &&
+        { offerListings &&
           offerListings.length > 0 &&
           offerListings.map((listing) => (
             <SwiperSlide>

@@ -12,7 +12,7 @@ import {
 
 export default function ListingItem({ listing }) {
   return (
-    <div className="bg-white shadow-lg hover:shadow-2xl m-3 sm:m-0 pb-2 transition-shadow overflow-hidden rounded-lg w-full sm:w-[310px]  ">
+    <div className="bg-white shadow-lg hover:shadow-2xl m-3 sm:m-0 pb-2 transition-shadow overflow-hidden rounded-lg w-full sm:w-[325px]  ">
       <Link to={`/listing/${listing._id}`}>
         <img
           src={
