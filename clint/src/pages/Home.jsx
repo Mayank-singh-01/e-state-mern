@@ -58,26 +58,26 @@ export default function Home() {
                   background: `url(${listing.imageUrls[0]}) center no-repeat`,
                   backgroundSize: "cover",
                 }}
-                className="sm:h-[500px] h-[300px] flex justify-center opacity-95 items-center"
+                className="sm:h-[500px] h-[260px] flex justify-center items-center"
                 key={listing._id}
               >
-                <div className="flex flex-col gap-6 sm:mt-16">
-                  <h1 className="text-white font-bold text-3xl sm:text-6xl">
+                <div className="flex flex-col gap-2 sm:gap-6">
+                  <h1 className="text-white font-bold whitespace-nowrap text-2xl lg:text-7xl md:text-6xl xl:text-7xl">
                     Because house <span className="text-mixup"> hunting</span>{" "}
                     is
                     <br />
                     always a breeze !
                   </h1>
-                  <div className="text-slate-300 hidden md:block sm:block font-serif text-xs sm:text-sm">
+                  <div className="text-slate-300  text-xs sm:text-sm">
                     MyEstate: Why not just sell your house and live in a tent?
                     <br />
                     We will help you find one in a prime location!
                   </div>
                   <Link
                     to={"/search"}
-                    className="text-lg text-mixup font-bold hover:underline"
+                    className="text-lg sm:text-2xl text-mixup mt-3 font-bold hover:underline"
                   >
-                    Let's get started...
+                    Let's get started....
                   </Link>
                 </div>
               </div>
