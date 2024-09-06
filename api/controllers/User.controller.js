@@ -1,5 +1,5 @@
 import bcryptjs from 'bcryptjs';
-import User from "../models/user.model.js";
+import User from "../models/User.model.js";
 import { errorHandler } from "../utils/Error.js";
 import Listing from '../models/listing.model.js';
 
