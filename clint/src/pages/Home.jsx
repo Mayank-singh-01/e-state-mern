@@ -68,7 +68,7 @@ export default function Home() {
                     <br />
                     always a breeze !
                   </h1>
-                  <div className="text-slate-300  text-xs sm:text-sm">
+                  <div className="text-slate-300 hidden text-md sm:block">
                     MyEstate: Why not just sell your house and live in a tent?
                     <br />
                     We will help you find one in a prime location!

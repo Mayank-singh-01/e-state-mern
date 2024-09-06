@@ -35,7 +35,7 @@ export default function Header() {
             <span className="">Estate</span>
           </h1>
         </Link>
-        <form onSubmit={handleSubmit} className="bg-slate-100 p-3 rounded-lg flex items-center">
+        <form onSubmit={handleSubmit} className="bg-slate-100 p-3 mx-2 rounded-lg flex items-center">
           <input
             type="text"
             placeholder="Search..."
@@ -63,7 +63,7 @@ export default function Header() {
               <img
                 src={currentUser.avatar}
                 alt="profile"
-                className="rounded-full h-8 w-8 object-cover"
+                className="rounded-full mx-2 h-8 w-8 object-cover"
               />
             ) : (
               <li className=" text-slate-700 cursor-pointer hover:underline whitespace-nowrap mx-2">
