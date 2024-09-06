@@ -221,7 +221,7 @@ export default function Search() {
         <h1 className="text-3xl font-semibold border-b p-3 text-slate-700 mt-5">
           Listing results:
         </h1>
-        <div className="p-7 flex flex-wrap justify-evenly gap-10 ">
+        <div className="p-3 sm:p-7 flex flex-wrap justify-evenly sm:gap-10 gap-4 ">
           {!loading && listings.length === 0 && (
             <p className="text-xl text-mixup text-center w-full font-semibold">
               No listing found!

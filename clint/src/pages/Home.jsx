@@ -87,13 +87,13 @@ export default function Home() {
 
       {/* listing results for offer, sale and rent */}
 
-      <div className="max-w-6xl mx-auto flex flex-col gap-8  p-3 flex-wrap my-6">
+      <div className="max-w-6xl mx-auto flex flex-col gap-4 p-3 flex-wrap my-6">
         {offerListings && offerListings.length > 0 && (
           <div>
             <h2 className="text-2xl font-semibold text-center pb-8 text-slate-600 font-serif">
               Recent offers
             </h2>
-            <div className="flex gap-4 flex-wrap justify-evenly">
+            <div className="flex sm:gap-10 gap-4 flex-wrap justify-evenly">
               {offerListings.map((listing) => (
                 <ListingItem listing={listing} key={listing._id} />
               ))}
